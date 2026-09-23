@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-neutral-900 font-sans antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .container-pro {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-primary-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-primary-700 hover:shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-primary-600 bg-transparent px-6 py-3 text-sm font-semibold text-primary-700 transition-all duration-200 hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 active:scale-[0.98];
+  }
+  .btn-white {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-semibold text-primary-700 shadow-sm transition-all duration-200 hover:bg-primary-50 hover:shadow-md active:scale-[0.98];
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-neutral-300 bg-white px-6 py-3 text-sm font-semibold text-neutral-700 transition-all duration-200 hover:border-primary-400 hover:text-primary-700 active:scale-[0.98];
+  }
+  .card {
+    @apply rounded-2xl border border-neutral-200 bg-white shadow-sm;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-primary-600;
+  }
+}
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+  }
+  .reveal.in-view {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
