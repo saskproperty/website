@@ -61,11 +61,11 @@ export function Navbar() {
 
         <div className="hidden items-center gap-4 lg:flex">
           <a
-            href="tel:+13067300462"
+            href="tel:+16397397450"
             className="flex items-center gap-2 text-sm font-semibold text-neutral-700 transition-colors hover:text-primary-700"
           >
             <Phone className="h-4 w-4 text-primary-600" aria-hidden="true" />
-            (306) 730-0462
+            (639) 739-7450
           </a>
           <a
             href="#contact"
@@ -107,12 +107,12 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="tel:+13067300462"
+              href="tel:+16397397450"
               onClick={handleNavClick}
               className="flex items-center gap-2 rounded-lg px-4 py-3 text-base font-semibold text-neutral-800 transition-colors hover:bg-primary-50 hover:text-primary-700"
             >
               <Phone className="h-5 w-5 text-primary-600" aria-hidden="true" />
-              (306) 730-0462
+              (639) 739-7450
             </a>
             <a
               href="#contact"

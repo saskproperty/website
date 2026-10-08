@@ -134,14 +134,14 @@ export function Contact() {
                 </p>
 
                 <div className="mt-6 space-y-4">
-                  <a href="tel:+13067300462" className="flex items-center gap-3 transition-opacity hover:opacity-80">
+                  <a href="tel:+16397397450" className="flex items-center gap-3 transition-opacity hover:opacity-80">
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-white/15">
                       <Phone className="h-5 w-5 text-white" aria-hidden="true" />
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-wider text-primary-200">Phone</p>
                       <p className="text-sm font-semibold text-white">
-                        (306) 730-0462
+                        (639) 739-7450
                       </p>
                     </div>
                   </a>
